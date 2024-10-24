@@ -378,3 +378,32 @@ Caused by: org.postgresql.util.PSQLException: FATAL: password authentication fai
 2024-10-21T00:37:07.859+05:30  INFO 7288 --- [FSD] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-10-21T00:37:07.861+05:30  INFO 7288 --- [FSD] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-10-21T00:37:07.864+05:30  INFO 7288 --- [FSD] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-21T00:40:55.244+05:30  INFO 24228 --- [FSD] [main] com.FSDProject.FSD.FsdApplication        : Starting FsdApplication using Java 17.0.10 with PID 24228 (D:\SpringBoot\FSD -final\FSD\target\classes started by vedaa in D:\SpringBoot\FSD -final\FSD)
+2024-10-21T00:40:55.247+05:30  INFO 24228 --- [FSD] [main] com.FSDProject.FSD.FsdApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-10-21T00:40:56.083+05:30  INFO 24228 --- [FSD] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-21T00:40:56.153+05:30  INFO 24228 --- [FSD] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 2 JPA repository interfaces.
+2024-10-21T00:40:56.933+05:30  INFO 24228 --- [FSD] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-10-21T00:40:56.947+05:30  INFO 24228 --- [FSD] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-21T00:40:56.948+05:30  INFO 24228 --- [FSD] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-21T00:40:57.034+05:30  INFO 24228 --- [FSD] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-21T00:40:57.035+05:30  INFO 24228 --- [FSD] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1723 ms
+2024-10-21T00:40:57.355+05:30  INFO 24228 --- [FSD] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-21T00:40:57.539+05:30  INFO 24228 --- [FSD] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-21T00:40:57.588+05:30  INFO 24228 --- [FSD] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-21T00:40:57.856+05:30  INFO 24228 --- [FSD] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-21T00:40:57.911+05:30  INFO 24228 --- [FSD] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-21T00:40:58.106+05:30  INFO 24228 --- [FSD] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1ccdc7aa
+2024-10-21T00:40:58.108+05:30  INFO 24228 --- [FSD] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-21T00:40:58.143+05:30  WARN 24228 --- [FSD] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-21T00:40:58.937+05:30  INFO 24228 --- [FSD] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-21T00:40:58.995+05:30  INFO 24228 --- [FSD] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-21T00:40:59.632+05:30  WARN 24228 --- [FSD] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-21T00:41:00.675+05:30  INFO 24228 --- [FSD] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-10-21T00:41:00.695+05:30  INFO 24228 --- [FSD] [main] com.FSDProject.FSD.FsdApplication        : Started FsdApplication in 5.869 seconds (process running for 6.211)
+2024-10-21T00:41:02.951+05:30  INFO 24228 --- [FSD] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-21T00:41:02.952+05:30  INFO 24228 --- [FSD] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-21T00:41:02.954+05:30  INFO 24228 --- [FSD] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-10-21T00:41:03.640+05:30  INFO 24228 --- [FSD] [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 377 ms
+2024-10-21T00:41:12.806+05:30  INFO 24228 --- [FSD] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-21T00:41:12.811+05:30  INFO 24228 --- [FSD] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-21T00:41:12.815+05:30  INFO 24228 --- [FSD] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
