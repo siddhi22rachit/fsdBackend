@@ -6,7 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.FSDProject.FSD.entitiy.MarksheetEntity;
+import com.FSDProject.FSD.entity.MarksheetEntity;
 import com.FSDProject.FSD.repository.MarksheetRepo;
 
 @Service

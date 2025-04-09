@@ -7,7 +7,7 @@ import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
 
-import com.FSDProject.FSD.entitiy.MarksheetEntity;
+import com.FSDProject.FSD.entity.MarksheetEntity;
 import com.FSDProject.FSD.service.MarksheetService;
 
 import java.util.HashMap;
@@ -21,7 +21,7 @@ import org.slf4j.LoggerFactory;
 @RestController
 @RequestMapping("/marksheet")
 public class MarksheetController {
-    private static final Logger logger = LoggerFactory.getLogger(ExaminerController.class);
+    private static final Logger logger = LoggerFactory.getLogger(TeacherController.class);
     @Autowired
     private MarksheetService marksheetService;
 
@@ -33,8 +33,8 @@ public class MarksheetController {
         return new ResponseEntity<>("Marksheet created successfully", HttpStatus.CREATED);
     }
 
-    // Get all Marksheets
-    @GetMapping("/all")
+    // Get all Marksheets      
+    @GetMapping("/all")    
     public ResponseEntity<List<MarksheetEntity>> getAllMarksheets() {
         logger.info("Request received to display all marksheet");
         try {
