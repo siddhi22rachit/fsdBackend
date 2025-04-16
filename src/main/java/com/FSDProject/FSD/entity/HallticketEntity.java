@@ -8,12 +8,12 @@ import jakarta.persistence.Table;
 import java.time.LocalDate;
 
 @Entity
-@Table(name = "marksheets")
-public class MarksheetEntity {
+@Table(name = "halltickets")
+public class HallticketEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long marksheetID;
+    private Long hallticketID;
 
     private String studentId;
 
@@ -25,17 +25,15 @@ public class MarksheetEntity {
 
     private LocalDate examDate;
 
-    private String resultStatus;
-
     private String academicYear;
 
     // Getters and Setters
-    public Long getMarksheetID() {
-        return marksheetID;
+    public Long getHallticketID() {
+        return hallticketID;
     }
 
-    public void setMarksheetID(Long marksheetID) {
-        this.marksheetID = marksheetID;
+    public void setHallticketID(Long hallticketID) {
+        this.hallticketID = hallticketID;
     }
 
     public String getStudentId() {
@@ -78,13 +76,7 @@ public class MarksheetEntity {
         this.examDate = examDate;
     }
 
-    public String getResultStatus() {
-        return resultStatus;
-    }
-
-    public void setResultStatus(String resultStatus) {
-        this.resultStatus = resultStatus;
-    }
+    
 
     public String getAcademicYear() {
         return academicYear;
