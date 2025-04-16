@@ -5,26 +5,18 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import java.time.LocalDate;
 
 @Entity
-@Table(name = "halltickets")
+@Table(name = "hallticket_entries")  
 public class HallticketEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long hallticketID;
-
-    private String studentId;
-
-    private String studentName;
-
-    private String examId;
-
+    private Long hallticketID;  
+    
+    private String name;
     private String examName;
-
-    private LocalDate examDate;
-
+    private String examDate;
     private String academicYear;
 
     // Getters and Setters
@@ -36,28 +28,12 @@ public class HallticketEntity {
         this.hallticketID = hallticketID;
     }
 
-    public String getStudentId() {
-        return studentId;
+    public String getName() {
+        return name;
     }
 
-    public void setStudentId(String studentId) {
-        this.studentId = studentId;
-    }
-
-    public String getStudentName() {
-        return studentName;
-    }
-
-    public void setStudentName(String studentName) {
-        this.studentName = studentName;
-    }
-
-    public String getExamId() {
-        return examId;
-    }
-
-    public void setExamId(String examId) {
-        this.examId = examId;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getExamName() {
@@ -68,15 +44,13 @@ public class HallticketEntity {
         this.examName = examName;
     }
 
-    public LocalDate getExamDate() {
+    public String getExamDate() {
         return examDate;
     }
 
-    public void setExamDate(LocalDate examDate) {
+    public void setExamDate(String examDate) {
         this.examDate = examDate;
     }
-
-    
 
     public String getAcademicYear() {
         return academicYear;

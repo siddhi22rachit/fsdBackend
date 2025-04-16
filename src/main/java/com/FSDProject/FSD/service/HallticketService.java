@@ -11,33 +11,29 @@ import com.FSDProject.FSD.repository.HallticketRepo;
 
 @Service
 public class HallticketService {
-
+    
     @Autowired
-    private HallticketRepo hallticketRepo;
+    private HallticketRepo hallticketRepo; 
 
-    // Save Hallticket
-    public HallticketEntity saveHallticket(HallticketEntity hallticketEntity) {
-        return hallticketRepo.save(hallticketEntity);
+    public HallticketEntity saveHallticket(HallticketEntity hallticketEntity) {  
+        return hallticketRepo.save(hallticketEntity);  
     }
 
-    // Get all Halltickets
     public List<HallticketEntity> getAllHalltickets() {
-        return hallticketRepo.findAll();
+        return hallticketRepo.findAll(); 
     }
 
-    // Get Hallticket by ID
     public Optional<HallticketEntity> getHallticketById(Long id) {
-        return hallticketRepo.findById(id);
+        return hallticketRepo.findById(id); 
     }
 
-    // Delete Hallticket by ID
-    public String deleteHallticketById(Long id) {
-        hallticketRepo.deleteById(id);
-        return "Hallticket deleted successfully";
-    }
-
-    // Update Hallticket
-    public HallticketEntity updateHallticket(HallticketEntity hallticketEntity) {
-        return hallticketRepo.save(hallticketEntity);
+    public String deleteHallticketById(Long id) {  
+        Optional<HallticketEntity> hallticketEntity = hallticketRepo.findById(id);
+        if (hallticketEntity.isPresent()) {
+            hallticketRepo.deleteById(id);
+            return "Deleted successfully";
+        } else {
+            return "Hallticket not found with ID: " + id;
+        }
     }
 }

@@ -1,121 +1,294 @@
-2025-04-09T21:54:58.540+05:30  INFO 19380 --- [FSD] [main] com.FSDProject.FSD.FsdApplication        : Starting FsdApplication using Java 22.0.1 with PID 19380 (C:\Users\Siddhi Sawant\OneDrive\Desktop\FSD-Backend\target\classes started by Siddhi Sawant in C:\Users\Siddhi Sawant\OneDrive\Desktop\FSD-Backend)
-2025-04-09T21:54:58.565+05:30  INFO 19380 --- [FSD] [main] com.FSDProject.FSD.FsdApplication        : No active profile set, falling back to 1 default profile: "default"
-2025-04-09T21:54:59.772+05:30  INFO 19380 --- [FSD] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-04-09T21:54:59.897+05:30  INFO 19380 --- [FSD] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109 ms. Found 4 JPA repository interfaces.
-2025-04-09T21:55:00.942+05:30  INFO 19380 --- [FSD] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-04-09T21:55:00.980+05:30  INFO 19380 --- [FSD] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-04-09T21:55:00.982+05:30  INFO 19380 --- [FSD] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
-2025-04-09T21:55:01.068+05:30  INFO 19380 --- [FSD] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-04-09T21:55:01.068+05:30  INFO 19380 --- [FSD] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2423 ms
-2025-04-09T21:55:01.284+05:30  INFO 19380 --- [FSD] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-04-09T21:55:01.372+05:30  INFO 19380 --- [FSD] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
-2025-04-09T21:55:01.441+05:30  INFO 19380 --- [FSD] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-04-09T21:55:02.085+05:30  INFO 19380 --- [FSD] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-04-09T21:55:02.134+05:30  INFO 19380 --- [FSD] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-04-09T21:55:02.492+05:30  INFO 19380 --- [FSD] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7a2a7492
-2025-04-09T21:55:02.492+05:30  INFO 19380 --- [FSD] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-04-09T21:55:02.601+05:30  WARN 19380 --- [FSD] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-04-09T21:55:03.786+05:30  INFO 19380 --- [FSD] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-04-09T21:55:03.981+05:30  INFO 19380 --- [FSD] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-04-09T21:55:04.452+05:30  WARN 19380 --- [FSD] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-04-09T21:55:04.911+05:30  INFO 19380 --- [FSD] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-04-09T21:55:04.929+05:30  INFO 19380 --- [FSD] [main] com.FSDProject.FSD.FsdApplication        : Started FsdApplication in 7.13 seconds (process running for 7.603)
-2025-04-09T21:55:20.608+05:30  INFO 19380 --- [FSD] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-04-09T21:55:20.612+05:30  INFO 19380 --- [FSD] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-04-09T21:55:20.616+05:30  INFO 19380 --- [FSD] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2025-04-09T21:55:20.729+05:30  INFO 19380 --- [FSD] [http-nio-8080-exec-1] c.F.FSD.controller.SupervisorController  : Request received to get all Supervisor
-2025-04-09T21:55:21.162+05:30  INFO 19380 --- [FSD] [http-nio-8080-exec-1] c.F.FSD.controller.SupervisorController  : Returning list of 2 Supervisor
-2025-04-09T21:55:21.735+05:30  INFO 19380 --- [FSD] [http-nio-8080-exec-3] c.F.FSD.controller.SupervisorController  : Request received to get all Supervisor
-2025-04-09T21:55:21.747+05:30  INFO 19380 --- [FSD] [http-nio-8080-exec-3] c.F.FSD.controller.SupervisorController  : Returning list of 2 Supervisor
-2025-04-09T22:04:48.475+05:30  INFO 19380 --- [FSD] [http-nio-8080-exec-5] c.F.FSD.controller.SupervisorController  : Request received to get all Supervisor
-2025-04-09T22:04:48.556+05:30  INFO 19380 --- [FSD] [http-nio-8080-exec-5] c.F.FSD.controller.SupervisorController  : Returning list of 2 Supervisor
-2025-04-09T22:04:48.759+05:30  INFO 19380 --- [FSD] [http-nio-8080-exec-6] c.F.FSD.controller.SupervisorController  : Request received to get all Supervisor
-2025-04-09T22:04:48.777+05:30  INFO 19380 --- [FSD] [http-nio-8080-exec-6] c.F.FSD.controller.SupervisorController  : Returning list of 2 Supervisor
-2025-04-09T22:05:55.129+05:30  INFO 19380 --- [FSD] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-04-09T22:05:55.143+05:30  INFO 19380 --- [FSD] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-04-09T22:05:55.158+05:30  INFO 19380 --- [FSD] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-04-09T22:06:14.455+05:30  INFO 22808 --- [FSD] [main] com.FSDProject.FSD.FsdApplication        : Starting FsdApplication using Java 22.0.1 with PID 22808 (C:\Users\Siddhi Sawant\OneDrive\Desktop\FSD-Backend\target\classes started by Siddhi Sawant in C:\Users\Siddhi Sawant\OneDrive\Desktop\FSD-Backend)
-2025-04-09T22:06:14.456+05:30  INFO 22808 --- [FSD] [main] com.FSDProject.FSD.FsdApplication        : No active profile set, falling back to 1 default profile: "default"
-2025-04-09T22:06:15.601+05:30  INFO 22808 --- [FSD] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-04-09T22:06:15.729+05:30  INFO 22808 --- [FSD] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 4 JPA repository interfaces.
-2025-04-09T22:06:16.485+05:30  INFO 22808 --- [FSD] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-04-09T22:06:16.515+05:30  INFO 22808 --- [FSD] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-04-09T22:06:16.515+05:30  INFO 22808 --- [FSD] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
-2025-04-09T22:06:16.632+05:30  INFO 22808 --- [FSD] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-04-09T22:06:16.634+05:30  INFO 22808 --- [FSD] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2103 ms
-2025-04-09T22:06:16.866+05:30  INFO 22808 --- [FSD] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-04-09T22:06:17.007+05:30  INFO 22808 --- [FSD] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
-2025-04-09T22:06:17.072+05:30  INFO 22808 --- [FSD] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-04-09T22:06:17.918+05:30  INFO 22808 --- [FSD] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-04-09T22:06:17.975+05:30  INFO 22808 --- [FSD] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-04-09T22:06:18.235+05:30  INFO 22808 --- [FSD] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@16b64a03
-2025-04-09T22:06:18.247+05:30  INFO 22808 --- [FSD] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-04-09T22:06:18.326+05:30  WARN 22808 --- [FSD] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-04-09T22:06:19.800+05:30  INFO 22808 --- [FSD] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-04-09T22:06:19.917+05:30  INFO 22808 --- [FSD] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-04-09T22:06:20.512+05:30  WARN 22808 --- [FSD] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-04-09T22:06:21.203+05:30  INFO 22808 --- [FSD] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-04-09T22:06:21.224+05:30  INFO 22808 --- [FSD] [main] com.FSDProject.FSD.FsdApplication        : Started FsdApplication in 7.447 seconds (process running for 7.792)
-2025-04-09T22:07:43.302+05:30  INFO 22808 --- [FSD] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-04-09T22:07:43.302+05:30  INFO 22808 --- [FSD] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-04-09T22:07:43.311+05:30  INFO 22808 --- [FSD] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
-2025-04-09T22:07:43.467+05:30  INFO 22808 --- [FSD] [http-nio-8080-exec-1] c.F.FSD.controller.TeacherController     : Request received to get all teachers
-2025-04-09T22:07:44.061+05:30  INFO 22808 --- [FSD] [http-nio-8080-exec-1] c.F.FSD.controller.TeacherController     : Returning list of 3 teachers
-2025-04-09T22:07:46.931+05:30  INFO 22808 --- [FSD] [http-nio-8080-exec-2] c.F.FSD.controller.SupervisorController  : Request received to get all Supervisor
-2025-04-09T22:07:46.960+05:30  INFO 22808 --- [FSD] [http-nio-8080-exec-2] c.F.FSD.controller.SupervisorController  : Returning list of 2 Supervisor
-2025-04-09T22:07:49.533+05:30  INFO 22808 --- [FSD] [http-nio-8080-exec-4] c.F.FSD.controller.TeacherController     : Request received to get all teachers
-2025-04-09T22:07:49.546+05:30  INFO 22808 --- [FSD] [http-nio-8080-exec-4] c.F.FSD.controller.TeacherController     : Returning list of 3 teachers
-2025-04-09T22:07:51.392+05:30  INFO 22808 --- [FSD] [http-nio-8080-exec-7] c.F.FSD.controller.SupervisorController  : Request received to get all Supervisor
-2025-04-09T22:07:51.406+05:30  INFO 22808 --- [FSD] [http-nio-8080-exec-7] c.F.FSD.controller.SupervisorController  : Returning list of 2 Supervisor
-2025-04-09T22:10:23.353+05:30  INFO 22808 --- [FSD] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-04-09T22:10:23.359+05:30  INFO 22808 --- [FSD] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-04-09T22:10:23.368+05:30  INFO 22808 --- [FSD] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-04-09T22:10:33.821+05:30  INFO 26972 --- [FSD] [main] com.FSDProject.FSD.FsdApplication        : Starting FsdApplication using Java 22.0.1 with PID 26972 (C:\Users\Siddhi Sawant\OneDrive\Desktop\FSD-Backend\target\classes started by Siddhi Sawant in C:\Users\Siddhi Sawant\OneDrive\Desktop\FSD-Backend)
-2025-04-09T22:10:33.826+05:30  INFO 26972 --- [FSD] [main] com.FSDProject.FSD.FsdApplication        : No active profile set, falling back to 1 default profile: "default"
-2025-04-09T22:10:34.800+05:30  INFO 26972 --- [FSD] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-04-09T22:10:34.908+05:30  INFO 26972 --- [FSD] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94 ms. Found 4 JPA repository interfaces.
-2025-04-09T22:10:35.627+05:30  INFO 26972 --- [FSD] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-04-09T22:10:35.655+05:30  INFO 26972 --- [FSD] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-04-09T22:10:35.655+05:30  INFO 26972 --- [FSD] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
-2025-04-09T22:10:35.793+05:30  INFO 26972 --- [FSD] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-04-09T22:10:35.803+05:30  INFO 26972 --- [FSD] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1897 ms
-2025-04-09T22:10:36.006+05:30  INFO 26972 --- [FSD] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-04-09T22:10:36.094+05:30  INFO 26972 --- [FSD] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
-2025-04-09T22:10:36.153+05:30  INFO 26972 --- [FSD] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-04-09T22:10:36.924+05:30  INFO 26972 --- [FSD] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-04-09T22:10:36.969+05:30  INFO 26972 --- [FSD] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-04-09T22:10:37.226+05:30  INFO 26972 --- [FSD] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@266da047
-2025-04-09T22:10:37.226+05:30  INFO 26972 --- [FSD] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-04-09T22:10:37.277+05:30  WARN 26972 --- [FSD] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-04-09T22:10:38.605+05:30  INFO 26972 --- [FSD] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-04-09T22:10:38.714+05:30  INFO 26972 --- [FSD] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-04-09T22:10:39.272+05:30  WARN 26972 --- [FSD] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-04-09T22:10:39.856+05:30  INFO 26972 --- [FSD] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-04-09T22:10:39.869+05:30  INFO 26972 --- [FSD] [main] com.FSDProject.FSD.FsdApplication        : Started FsdApplication in 6.773 seconds (process running for 7.274)
-2025-04-09T22:13:19.083+05:30  INFO 26972 --- [FSD] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-04-09T22:13:19.084+05:30  INFO 26972 --- [FSD] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-04-09T22:13:19.088+05:30  INFO 26972 --- [FSD] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2025-04-09T22:13:19.220+05:30  INFO 26972 --- [FSD] [http-nio-8080-exec-1] c.F.FSD.controller.SupervisorController  : Request received to get all Supervisor
-2025-04-09T22:13:19.608+05:30  INFO 26972 --- [FSD] [http-nio-8080-exec-1] c.F.FSD.controller.SupervisorController  : Returning list of 2 Supervisor
-2025-04-09T22:13:29.199+05:30  INFO 26972 --- [FSD] [http-nio-8080-exec-3] c.F.FSD.controller.SupervisorController  : Request received to get all Supervisor
-2025-04-09T22:13:29.211+05:30  INFO 26972 --- [FSD] [http-nio-8080-exec-3] c.F.FSD.controller.SupervisorController  : Returning list of 2 Supervisor
-2025-04-09T22:13:31.425+05:30  INFO 26972 --- [FSD] [http-nio-8080-exec-10] c.F.FSD.controller.EnrollmentController  : Request received to get all Enrollment
-2025-04-09T22:13:31.439+05:30  WARN 26972 --- [FSD] [http-nio-8080-exec-10] c.F.FSD.controller.EnrollmentController  : No Enrollment found
-2025-04-09T22:13:47.991+05:30  INFO 26972 --- [FSD] [http-nio-8080-exec-8] c.F.FSD.controller.EnrollmentController  : Request received to create a enrollment with name: Siddhi Sawant
-2025-04-09T22:13:48.083+05:30  INFO 26972 --- [FSD] [http-nio-8080-exec-8] c.F.FSD.controller.EnrollmentController  : Enrollment created successfully with ID: 1
-2025-04-09T22:13:50.243+05:30  INFO 26972 --- [FSD] [http-nio-8080-exec-9] c.F.FSD.controller.EnrollmentController  : Request received to get all Enrollment
-2025-04-09T22:13:50.259+05:30  INFO 26972 --- [FSD] [http-nio-8080-exec-9] c.F.FSD.controller.EnrollmentController  : Returning list of 1 Enrollment
-2025-04-09T22:13:52.211+05:30  INFO 26972 --- [FSD] [http-nio-8080-exec-5] c.F.FSD.controller.SupervisorController  : Request received to get all Supervisor
-2025-04-09T22:13:52.215+05:30  INFO 26972 --- [FSD] [http-nio-8080-exec-5] c.F.FSD.controller.SupervisorController  : Returning list of 2 Supervisor
-2025-04-09T22:13:55.478+05:30  INFO 26972 --- [FSD] [http-nio-8080-exec-2] c.F.FSD.controller.SupervisorController  : Request received to delete Supervisor with ID: 2
-2025-04-09T22:13:55.555+05:30  INFO 26972 --- [FSD] [http-nio-8080-exec-2] c.F.FSD.controller.SupervisorController  : Supervisor deleted successfully with ID: 2
-2025-04-09T22:13:57.326+05:30  INFO 26972 --- [FSD] [http-nio-8080-exec-3] c.F.FSD.controller.SupervisorController  : Request received to get all Supervisor
-2025-04-09T22:13:57.339+05:30  INFO 26972 --- [FSD] [http-nio-8080-exec-3] c.F.FSD.controller.SupervisorController  : Returning list of 1 Supervisor
-2025-04-09T22:14:00.523+05:30  INFO 26972 --- [FSD] [http-nio-8080-exec-4] c.F.FSD.controller.TeacherController     : Request received to get all teachers
-2025-04-09T22:14:00.533+05:30  INFO 26972 --- [FSD] [http-nio-8080-exec-4] c.F.FSD.controller.TeacherController     : Returning list of 3 teachers
-2025-04-09T22:14:04.886+05:30  INFO 26972 --- [FSD] [http-nio-8080-exec-10] c.F.FSD.controller.SupervisorController  : Request received to get all Supervisor
-2025-04-09T22:14:04.894+05:30  INFO 26972 --- [FSD] [http-nio-8080-exec-10] c.F.FSD.controller.SupervisorController  : Returning list of 1 Supervisor
-2025-04-09T22:14:06.010+05:30  INFO 26972 --- [FSD] [http-nio-8080-exec-6] c.F.FSD.controller.EnrollmentController  : Request received to get all Enrollment
-2025-04-09T22:14:06.019+05:30  INFO 26972 --- [FSD] [http-nio-8080-exec-6] c.F.FSD.controller.EnrollmentController  : Returning list of 1 Enrollment
-2025-04-09T22:55:09.649+05:30  WARN 26972 --- [FSD] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=25m31s965ms703µs800ns).
-2025-04-09T23:17:45.990+05:30  WARN 26972 --- [FSD] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m35s975ms996µs600ns).
+2025-04-17T01:02:57.075+05:30  INFO 11704 --- [FSD] [main] com.FSDProject.FSD.FsdApplication        : Starting FsdApplication using Java 22.0.1 with PID 11704 (C:\Users\Siddhi Sawant\OneDrive\Desktop\FSD-Backend\target\classes started by Siddhi Sawant in C:\Users\Siddhi Sawant\OneDrive\Desktop\FSD-Backend)
+2025-04-17T01:02:57.089+05:30  INFO 11704 --- [FSD] [main] com.FSDProject.FSD.FsdApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-04-17T01:02:57.824+05:30  INFO 11704 --- [FSD] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-17T01:02:57.916+05:30  INFO 11704 --- [FSD] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 4 JPA repository interfaces.
+2025-04-17T01:02:58.567+05:30  INFO 11704 --- [FSD] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-17T01:02:58.607+05:30  INFO 11704 --- [FSD] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-17T01:02:58.609+05:30  INFO 11704 --- [FSD] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-04-17T01:02:58.724+05:30  INFO 11704 --- [FSD] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-17T01:02:58.725+05:30  INFO 11704 --- [FSD] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1575 ms
+2025-04-17T01:02:58.946+05:30  INFO 11704 --- [FSD] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-17T01:02:59.035+05:30  INFO 11704 --- [FSD] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-04-17T01:02:59.092+05:30  INFO 11704 --- [FSD] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-17T01:02:59.496+05:30  INFO 11704 --- [FSD] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-17T01:02:59.558+05:30  INFO 11704 --- [FSD] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-17T01:02:59.935+05:30  INFO 11704 --- [FSD] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7d61468c
+2025-04-17T01:02:59.935+05:30  INFO 11704 --- [FSD] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-17T01:03:00.047+05:30  WARN 11704 --- [FSD] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-17T01:03:01.125+05:30  INFO 11704 --- [FSD] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-17T01:03:01.345+05:30  INFO 11704 --- [FSD] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-17T01:03:01.795+05:30  WARN 11704 --- [FSD] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-17T01:03:02.285+05:30  INFO 11704 --- [FSD] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-17T01:03:02.290+05:30  INFO 11704 --- [FSD] [main] com.FSDProject.FSD.FsdApplication        : Started FsdApplication in 5.811 seconds (process running for 6.161)
+2025-04-17T01:04:37.539+05:30  INFO 11704 --- [FSD] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-17T01:04:37.549+05:30  INFO 11704 --- [FSD] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-17T01:04:37.579+05:30  INFO 11704 --- [FSD] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 30 ms
+2025-04-17T01:04:37.742+05:30  INFO 11704 --- [FSD] [http-nio-8080-exec-2] c.F.FSD.controller.TeacherController     : Request received to display all hallticket
+2025-04-17T01:04:38.219+05:30  WARN 11704 --- [FSD] [http-nio-8080-exec-2] c.F.FSD.controller.TeacherController     : No halltickets found
+2025-04-17T01:06:07.178+05:30  WARN 11704 --- [FSD] [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "create"]
+2025-04-17T01:09:31.247+05:30  INFO 11704 --- [FSD] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-17T01:09:31.298+05:30  INFO 11704 --- [FSD] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-17T01:09:31.328+05:30  INFO 11704 --- [FSD] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-17T01:10:16.268+05:30  INFO 11576 --- [FSD] [main] com.FSDProject.FSD.FsdApplication        : Starting FsdApplication using Java 22.0.1 with PID 11576 (C:\Users\Siddhi Sawant\OneDrive\Desktop\FSD-Backend\target\classes started by Siddhi Sawant in C:\Users\Siddhi Sawant\OneDrive\Desktop\FSD-Backend)
+2025-04-17T01:10:16.274+05:30  INFO 11576 --- [FSD] [main] com.FSDProject.FSD.FsdApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-04-17T01:10:17.199+05:30  INFO 11576 --- [FSD] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-17T01:10:17.293+05:30  INFO 11576 --- [FSD] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 4 JPA repository interfaces.
+2025-04-17T01:10:17.918+05:30  INFO 11576 --- [FSD] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-17T01:10:17.946+05:30  INFO 11576 --- [FSD] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-17T01:10:17.946+05:30  INFO 11576 --- [FSD] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-04-17T01:10:18.035+05:30  INFO 11576 --- [FSD] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-17T01:10:18.036+05:30  INFO 11576 --- [FSD] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1709 ms
+2025-04-17T01:10:18.229+05:30  INFO 11576 --- [FSD] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-17T01:10:18.329+05:30  INFO 11576 --- [FSD] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-04-17T01:10:18.398+05:30  INFO 11576 --- [FSD] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-17T01:10:18.975+05:30  INFO 11576 --- [FSD] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-17T01:10:19.027+05:30  INFO 11576 --- [FSD] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-17T01:10:19.463+05:30  INFO 11576 --- [FSD] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5817f1ca
+2025-04-17T01:10:19.463+05:30  INFO 11576 --- [FSD] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-17T01:10:19.536+05:30  WARN 11576 --- [FSD] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-17T01:10:20.776+05:30  INFO 11576 --- [FSD] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-17T01:10:20.914+05:30  INFO 11576 --- [FSD] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-17T01:10:21.460+05:30  WARN 11576 --- [FSD] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-17T01:10:22.057+05:30  INFO 11576 --- [FSD] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-17T01:10:22.072+05:30  INFO 11576 --- [FSD] [main] com.FSDProject.FSD.FsdApplication        : Started FsdApplication in 6.473 seconds (process running for 6.907)
+2025-04-17T01:10:30.943+05:30  INFO 11576 --- [FSD] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-17T01:10:30.943+05:30  INFO 11576 --- [FSD] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-17T01:10:30.950+05:30  INFO 11576 --- [FSD] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2025-04-17T01:10:39.505+05:30  INFO 11576 --- [FSD] [http-nio-8080-exec-4] c.F.FSD.controller.TeacherController     : Request received to display all hallticket
+2025-04-17T01:10:39.996+05:30  WARN 11576 --- [FSD] [http-nio-8080-exec-4] c.F.FSD.controller.TeacherController     : No halltickets found
+2025-04-17T01:10:40.888+05:30  INFO 11576 --- [FSD] [http-nio-8080-exec-1] c.F.FSD.controller.TeacherController     : Request received to display all hallticket
+2025-04-17T01:10:40.908+05:30  WARN 11576 --- [FSD] [http-nio-8080-exec-1] c.F.FSD.controller.TeacherController     : No halltickets found
+2025-04-17T01:11:30.946+05:30  INFO 11576 --- [FSD] [http-nio-8080-exec-7] c.F.FSD.controller.TeacherController     : Request received to get all teachers
+2025-04-17T01:11:31.019+05:30  INFO 11576 --- [FSD] [http-nio-8080-exec-7] c.F.FSD.controller.TeacherController     : Returning list of 3 teachers
+2025-04-17T01:11:53.324+05:30  INFO 11576 --- [FSD] [http-nio-8080-exec-10] c.F.FSD.controller.TeacherController     : Request received to create a teacher with name: jk
+2025-04-17T01:11:53.459+05:30  INFO 11576 --- [FSD] [http-nio-8080-exec-10] c.F.FSD.controller.TeacherController     : Teacher created successfully with ID: 4
+2025-04-17T01:11:55.815+05:30  INFO 11576 --- [FSD] [http-nio-8080-exec-3] c.F.FSD.controller.TeacherController     : Request received to get all teachers
+2025-04-17T01:11:55.826+05:30  INFO 11576 --- [FSD] [http-nio-8080-exec-3] c.F.FSD.controller.TeacherController     : Returning list of 4 teachers
+2025-04-17T01:12:05.238+05:30  INFO 11576 --- [FSD] [http-nio-8080-exec-4] c.F.FSD.controller.EnrollmentController  : Request received to get all Enrollment
+2025-04-17T01:12:05.260+05:30  INFO 11576 --- [FSD] [http-nio-8080-exec-4] c.F.FSD.controller.EnrollmentController  : Returning list of 1 Enrollment
+2025-04-17T01:12:07.991+05:30  INFO 11576 --- [FSD] [http-nio-8080-exec-6] c.F.FSD.controller.TeacherController     : Request received to display all hallticket
+2025-04-17T01:12:08.002+05:30  WARN 11576 --- [FSD] [http-nio-8080-exec-6] c.F.FSD.controller.TeacherController     : No halltickets found
+2025-04-17T01:16:45.197+05:30  INFO 11576 --- [FSD] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-17T01:16:45.244+05:30  INFO 11576 --- [FSD] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-17T01:16:45.270+05:30  INFO 11576 --- [FSD] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-17T01:16:59.433+05:30  INFO 18884 --- [FSD] [main] com.FSDProject.FSD.FsdApplication        : Starting FsdApplication using Java 22.0.1 with PID 18884 (C:\Users\Siddhi Sawant\OneDrive\Desktop\FSD-Backend\target\classes started by Siddhi Sawant in C:\Users\Siddhi Sawant\OneDrive\Desktop\FSD-Backend)
+2025-04-17T01:16:59.436+05:30  INFO 18884 --- [FSD] [main] com.FSDProject.FSD.FsdApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-04-17T01:17:00.474+05:30  INFO 18884 --- [FSD] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-17T01:17:00.566+05:30  INFO 18884 --- [FSD] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 4 JPA repository interfaces.
+2025-04-17T01:17:01.291+05:30  INFO 18884 --- [FSD] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-17T01:17:01.313+05:30  INFO 18884 --- [FSD] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-17T01:17:01.314+05:30  INFO 18884 --- [FSD] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-04-17T01:17:01.417+05:30  INFO 18884 --- [FSD] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-17T01:17:01.418+05:30  INFO 18884 --- [FSD] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1926 ms
+2025-04-17T01:17:01.615+05:30  INFO 18884 --- [FSD] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-17T01:17:01.711+05:30  INFO 18884 --- [FSD] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-04-17T01:17:01.770+05:30  INFO 18884 --- [FSD] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-17T01:17:02.411+05:30  INFO 18884 --- [FSD] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-17T01:17:02.457+05:30  INFO 18884 --- [FSD] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-17T01:17:02.916+05:30  INFO 18884 --- [FSD] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@266da047
+2025-04-17T01:17:02.918+05:30  INFO 18884 --- [FSD] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-17T01:17:02.998+05:30  WARN 18884 --- [FSD] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-17T01:17:04.257+05:30  INFO 18884 --- [FSD] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-17T01:17:04.360+05:30  INFO 18884 --- [FSD] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-17T01:17:04.841+05:30  WARN 18884 --- [FSD] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-17T01:17:05.347+05:30  INFO 18884 --- [FSD] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-17T01:17:05.366+05:30  INFO 18884 --- [FSD] [main] com.FSDProject.FSD.FsdApplication        : Started FsdApplication in 6.583 seconds (process running for 7.046)
+2025-04-17T01:17:12.018+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-17T01:17:12.019+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-17T01:17:12.022+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-04-17T01:17:12.064+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-1] c.F.FSD.controller.HallticketController  : Request received to get all halltickets
+2025-04-17T01:17:12.245+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-1] c.F.FSD.controller.HallticketController  : Returning list of 4 halltickets
+2025-04-17T01:17:13.366+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-2] c.F.FSD.controller.HallticketController  : Request received to get all halltickets
+2025-04-17T01:17:13.384+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-2] c.F.FSD.controller.HallticketController  : Returning list of 4 halltickets
+2025-04-17T01:17:19.888+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-8] c.F.FSD.controller.TeacherController     : Request received to get all teachers
+2025-04-17T01:17:19.902+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-8] c.F.FSD.controller.TeacherController     : Returning list of 4 teachers
+2025-04-17T01:17:26.169+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-6] c.F.FSD.controller.HallticketController  : Request received to get all halltickets
+2025-04-17T01:17:26.179+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-6] c.F.FSD.controller.HallticketController  : Returning list of 4 halltickets
+2025-04-17T01:18:15.790+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-4] c.F.FSD.controller.HallticketController  : Request received to create a hallticket with name: lisa
+2025-04-17T01:18:15.906+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-4] c.F.FSD.controller.HallticketController  : Hallticket created successfully with ID: 5
+2025-04-17T01:18:17.757+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-9] c.F.FSD.controller.HallticketController  : Request received to get all halltickets
+2025-04-17T01:18:17.769+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-9] c.F.FSD.controller.HallticketController  : Returning list of 5 halltickets
+2025-04-17T01:18:22.884+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-10] c.F.FSD.controller.TeacherController     : Request received to get all teachers
+2025-04-17T01:18:22.903+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-10] c.F.FSD.controller.TeacherController     : Returning list of 5 teachers
+2025-04-17T01:21:10.349+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-2] c.F.FSD.controller.TeacherController     : Request received to get all teachers
+2025-04-17T01:21:10.732+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-2] c.F.FSD.controller.TeacherController     : Returning list of 5 teachers
+2025-04-17T01:21:11.592+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-3] c.F.FSD.controller.TeacherController     : Request received to get all teachers
+2025-04-17T01:21:11.611+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-3] c.F.FSD.controller.TeacherController     : Returning list of 5 teachers
+2025-04-17T01:21:17.332+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-5] c.F.FSD.controller.HallticketController  : Request received to get all halltickets
+2025-04-17T01:21:17.353+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-5] c.F.FSD.controller.HallticketController  : Returning list of 5 halltickets
+2025-04-17T01:21:21.722+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-4] c.F.FSD.controller.HallticketController  : Request received to delete hallticket with ID: 5
+2025-04-17T01:21:22.092+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-4] c.F.FSD.controller.HallticketController  : Hallticket deleted successfully with ID: 5
+2025-04-17T01:21:24.476+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-9] c.F.FSD.controller.HallticketController  : Request received to get all halltickets
+2025-04-17T01:21:24.489+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-9] c.F.FSD.controller.HallticketController  : Returning list of 4 halltickets
+2025-04-17T01:21:26.638+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-10] c.F.FSD.controller.TeacherController     : Request received to get all teachers
+2025-04-17T01:21:26.648+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-10] c.F.FSD.controller.TeacherController     : Returning list of 4 teachers
+2025-04-17T01:21:32.085+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-1] c.F.FSD.controller.HallticketController  : Request received to get all halltickets
+2025-04-17T01:21:32.095+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-1] c.F.FSD.controller.HallticketController  : Returning list of 4 halltickets
+2025-04-17T01:21:35.477+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-3] c.F.FSD.controller.HallticketController  : Request received to delete hallticket with ID: 1
+2025-04-17T01:21:35.498+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-3] c.F.FSD.controller.HallticketController  : Hallticket deleted successfully with ID: 1
+2025-04-17T01:21:37.533+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-8] c.F.FSD.controller.HallticketController  : Request received to get all halltickets
+2025-04-17T01:21:37.541+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-8] c.F.FSD.controller.HallticketController  : Returning list of 3 halltickets
+2025-04-17T01:21:40.037+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-6] c.F.FSD.controller.TeacherController     : Request received to get all teachers
+2025-04-17T01:21:40.045+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-6] c.F.FSD.controller.TeacherController     : Returning list of 3 teachers
+2025-04-17T01:21:44.851+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-5] c.F.FSD.controller.HallticketController  : Request received to get all halltickets
+2025-04-17T01:21:44.861+05:30  INFO 18884 --- [FSD] [http-nio-8080-exec-5] c.F.FSD.controller.HallticketController  : Returning list of 3 halltickets
+2025-04-17T01:22:56.427+05:30  INFO 18884 --- [FSD] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-17T01:22:56.476+05:30  INFO 18884 --- [FSD] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-17T01:22:56.498+05:30  INFO 18884 --- [FSD] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-17T01:23:06.726+05:30  INFO 21444 --- [FSD] [main] com.FSDProject.FSD.FsdApplication        : Starting FsdApplication using Java 22.0.1 with PID 21444 (C:\Users\Siddhi Sawant\OneDrive\Desktop\FSD-Backend\target\classes started by Siddhi Sawant in C:\Users\Siddhi Sawant\OneDrive\Desktop\FSD-Backend)
+2025-04-17T01:23:06.728+05:30  INFO 21444 --- [FSD] [main] com.FSDProject.FSD.FsdApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-04-17T01:23:07.724+05:30  INFO 21444 --- [FSD] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-17T01:23:07.804+05:30  INFO 21444 --- [FSD] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 4 JPA repository interfaces.
+2025-04-17T01:23:08.444+05:30  INFO 21444 --- [FSD] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-17T01:23:08.467+05:30  INFO 21444 --- [FSD] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-17T01:23:08.467+05:30  INFO 21444 --- [FSD] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-04-17T01:23:08.574+05:30  INFO 21444 --- [FSD] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-17T01:23:08.574+05:30  INFO 21444 --- [FSD] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1793 ms
+2025-04-17T01:23:08.814+05:30  INFO 21444 --- [FSD] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-17T01:23:08.897+05:30  INFO 21444 --- [FSD] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-04-17T01:23:08.956+05:30  INFO 21444 --- [FSD] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-17T01:23:09.578+05:30  INFO 21444 --- [FSD] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-17T01:23:09.623+05:30  INFO 21444 --- [FSD] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-17T01:23:10.044+05:30  INFO 21444 --- [FSD] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@266da047
+2025-04-17T01:23:10.044+05:30  INFO 21444 --- [FSD] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-17T01:23:10.143+05:30  WARN 21444 --- [FSD] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-17T01:23:11.429+05:30  INFO 21444 --- [FSD] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-17T01:23:11.628+05:30  INFO 21444 --- [FSD] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-17T01:23:12.126+05:30  WARN 21444 --- [FSD] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-17T01:23:12.716+05:30  INFO 21444 --- [FSD] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-17T01:23:12.729+05:30  INFO 21444 --- [FSD] [main] com.FSDProject.FSD.FsdApplication        : Started FsdApplication in 6.71 seconds (process running for 7.189)
+2025-04-17T01:23:31.648+05:30  INFO 21444 --- [FSD] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-17T01:23:31.649+05:30  INFO 21444 --- [FSD] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-17T01:23:31.649+05:30  INFO 21444 --- [FSD] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-04-17T01:23:31.839+05:30  INFO 21444 --- [FSD] [http-nio-8080-exec-2] c.F.FSD.controller.HallticketController  : Request received to delete hallticket with ID: 4
+2025-04-17T01:23:31.939+05:30  WARN 21444 --- [FSD] [http-nio-8080-exec-2] c.F.FSD.controller.HallticketController  : Hallticket not found with ID: 4
+2025-04-17T01:23:33.406+05:30  INFO 21444 --- [FSD] [http-nio-8080-exec-3] c.F.FSD.controller.HallticketController  : Request received to delete hallticket with ID: 4
+2025-04-17T01:23:33.408+05:30  WARN 21444 --- [FSD] [http-nio-8080-exec-3] c.F.FSD.controller.HallticketController  : Hallticket not found with ID: 4
+2025-04-17T01:24:48.783+05:30  INFO 21444 --- [FSD] [http-nio-8080-exec-5] c.F.FSD.controller.HallticketController  : Request received to create a hallticket with name: Siddhi Sawant
+2025-04-17T01:24:48.988+05:30  INFO 21444 --- [FSD] [http-nio-8080-exec-5] c.F.FSD.controller.HallticketController  : Hallticket created successfully with ID: 1
+2025-04-17T01:24:51.028+05:30  INFO 21444 --- [FSD] [http-nio-8080-exec-6] c.F.FSD.controller.HallticketController  : Request received to get all halltickets
+2025-04-17T01:24:51.482+05:30  INFO 21444 --- [FSD] [http-nio-8080-exec-6] c.F.FSD.controller.HallticketController  : Returning list of 1 halltickets
+2025-04-17T01:24:55.204+05:30  INFO 21444 --- [FSD] [http-nio-8080-exec-7] c.F.FSD.controller.TeacherController     : Request received to get all teachers
+2025-04-17T01:24:55.253+05:30  INFO 21444 --- [FSD] [http-nio-8080-exec-7] c.F.FSD.controller.TeacherController     : Returning list of 3 teachers
+2025-04-17T01:24:59.348+05:30  INFO 21444 --- [FSD] [http-nio-8080-exec-9] c.F.FSD.controller.HallticketController  : Request received to get all halltickets
+2025-04-17T01:24:59.357+05:30  INFO 21444 --- [FSD] [http-nio-8080-exec-9] c.F.FSD.controller.HallticketController  : Returning list of 1 halltickets
+2025-04-17T01:25:47.608+05:30  INFO 21444 --- [FSD] [http-nio-8080-exec-1] c.F.FSD.controller.HallticketController  : Request received to get all halltickets
+2025-04-17T01:25:47.620+05:30  INFO 21444 --- [FSD] [http-nio-8080-exec-1] c.F.FSD.controller.HallticketController  : Returning list of 1 halltickets
+2025-04-17T01:25:48.550+05:30  INFO 21444 --- [FSD] [http-nio-8080-exec-2] c.F.FSD.controller.HallticketController  : Request received to get all halltickets
+2025-04-17T01:25:48.556+05:30  INFO 21444 --- [FSD] [http-nio-8080-exec-2] c.F.FSD.controller.HallticketController  : Returning list of 1 halltickets
+2025-04-17T01:33:36.429+05:30  INFO 21444 --- [FSD] [http-nio-8080-exec-7] c.F.FSD.controller.HallticketController  : Request received to create a hallticket with name: Riya
+2025-04-17T01:33:36.717+05:30  INFO 21444 --- [FSD] [http-nio-8080-exec-7] c.F.FSD.controller.HallticketController  : Hallticket created successfully with ID: 2
+2025-04-17T01:34:35.565+05:30  INFO 21444 --- [FSD] [http-nio-8080-exec-8] c.F.FSD.controller.HallticketController  : Request received to delete hallticket with ID: 1
+2025-04-17T01:34:35.947+05:30  INFO 21444 --- [FSD] [http-nio-8080-exec-8] c.F.FSD.controller.HallticketController  : Hallticket deleted successfully with ID: 1
+2025-04-17T01:35:19.407+05:30  INFO 21444 --- [FSD] [http-nio-8080-exec-9] c.F.FSD.controller.HallticketController  : Request received to create a hallticket with name: Riya
+2025-04-17T01:35:19.440+05:30  INFO 21444 --- [FSD] [http-nio-8080-exec-9] c.F.FSD.controller.HallticketController  : Hallticket created successfully with ID: 3
+2025-04-17T01:35:27.468+05:30  INFO 21444 --- [FSD] [http-nio-8080-exec-10] c.F.FSD.controller.HallticketController  : Request received to create a hallticket with name: siddhi
+2025-04-17T01:35:27.476+05:30  INFO 21444 --- [FSD] [http-nio-8080-exec-10] c.F.FSD.controller.HallticketController  : Hallticket created successfully with ID: 4
+2025-04-17T01:35:53.231+05:30  INFO 21444 --- [FSD] [http-nio-8080-exec-2] c.F.FSD.controller.HallticketController  : Request received to get all halltickets
+2025-04-17T01:35:53.273+05:30  INFO 21444 --- [FSD] [http-nio-8080-exec-2] c.F.FSD.controller.HallticketController  : Returning list of 3 halltickets
+2025-04-17T01:36:49.244+05:30  INFO 21444 --- [FSD] [http-nio-8080-exec-3] c.F.FSD.controller.HallticketController  : Request received to get all halltickets
+2025-04-17T01:36:49.264+05:30  INFO 21444 --- [FSD] [http-nio-8080-exec-3] c.F.FSD.controller.HallticketController  : Returning list of 3 halltickets
+2025-04-17T01:36:50.266+05:30  INFO 21444 --- [FSD] [http-nio-8080-exec-4] c.F.FSD.controller.HallticketController  : Request received to get all halltickets
+2025-04-17T01:36:50.285+05:30  INFO 21444 --- [FSD] [http-nio-8080-exec-4] c.F.FSD.controller.HallticketController  : Returning list of 3 halltickets
+2025-04-17T01:39:25.164+05:30  INFO 21444 --- [FSD] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-17T01:39:25.229+05:30  INFO 21444 --- [FSD] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-17T01:39:25.258+05:30  INFO 21444 --- [FSD] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-17T01:39:42.529+05:30  INFO 19084 --- [FSD] [main] com.FSDProject.FSD.FsdApplication        : Starting FsdApplication using Java 22.0.1 with PID 19084 (C:\Users\Siddhi Sawant\OneDrive\Desktop\FSD-Backend\target\classes started by Siddhi Sawant in C:\Users\Siddhi Sawant\OneDrive\Desktop\FSD-Backend)
+2025-04-17T01:39:42.535+05:30  INFO 19084 --- [FSD] [main] com.FSDProject.FSD.FsdApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-04-17T01:39:43.662+05:30  INFO 19084 --- [FSD] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-17T01:39:43.765+05:30  INFO 19084 --- [FSD] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 89 ms. Found 4 JPA repository interfaces.
+2025-04-17T01:39:44.430+05:30  INFO 19084 --- [FSD] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-17T01:39:44.454+05:30  INFO 19084 --- [FSD] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-17T01:39:44.454+05:30  INFO 19084 --- [FSD] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-04-17T01:39:44.561+05:30  INFO 19084 --- [FSD] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-17T01:39:44.561+05:30  INFO 19084 --- [FSD] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1955 ms
+2025-04-17T01:39:44.836+05:30  INFO 19084 --- [FSD] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-17T01:39:44.966+05:30  INFO 19084 --- [FSD] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-04-17T01:39:45.048+05:30  INFO 19084 --- [FSD] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-17T01:39:45.802+05:30  INFO 19084 --- [FSD] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-17T01:39:45.865+05:30  INFO 19084 --- [FSD] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-17T01:39:46.349+05:30  INFO 19084 --- [FSD] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@84f51d9
+2025-04-17T01:39:46.356+05:30  INFO 19084 --- [FSD] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-17T01:39:46.431+05:30  WARN 19084 --- [FSD] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-17T01:39:47.518+05:30  INFO 19084 --- [FSD] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-17T01:39:47.635+05:30  INFO 19084 --- [FSD] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-17T01:39:48.140+05:30  WARN 19084 --- [FSD] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-17T01:39:48.803+05:30  INFO 19084 --- [FSD] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-17T01:39:48.807+05:30  INFO 19084 --- [FSD] [main] com.FSDProject.FSD.FsdApplication        : Started FsdApplication in 6.905 seconds (process running for 7.372)
+2025-04-17T01:40:21.481+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-17T01:40:21.483+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-17T01:40:21.490+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-04-17T01:40:21.831+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-1] c.F.FSD.controller.HallticketController  : Request received to create a hallticket with name: siddhi
+2025-04-17T01:40:22.054+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-1] c.F.FSD.controller.HallticketController  : Hallticket created successfully with ID: 5
+2025-04-17T01:40:39.593+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-3] c.F.FSD.controller.HallticketController  : Request received to get all halltickets
+2025-04-17T01:40:40.002+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-3] c.F.FSD.controller.HallticketController  : Returning list of 4 halltickets
+2025-04-17T01:40:52.712+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-6] c.F.FSD.controller.HallticketController  : Request received to get all halltickets
+2025-04-17T01:40:52.731+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-6] c.F.FSD.controller.HallticketController  : Returning list of 4 halltickets
+2025-04-17T01:40:53.310+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-4] c.F.FSD.controller.HallticketController  : Request received to get all halltickets
+2025-04-17T01:40:53.319+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-4] c.F.FSD.controller.HallticketController  : Returning list of 4 halltickets
+2025-04-17T01:40:55.982+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-7] c.F.FSD.controller.HallticketController  : Request received to delete hallticket with ID: 4
+2025-04-17T01:40:56.081+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-7] c.F.FSD.controller.HallticketController  : Hallticket deleted successfully with ID: 4
+2025-04-17T01:40:58.781+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-10] c.F.FSD.controller.HallticketController  : Request received to get all halltickets
+2025-04-17T01:40:58.792+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-10] c.F.FSD.controller.HallticketController  : Returning list of 3 halltickets
+2025-04-17T01:41:00.954+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-2] c.F.FSD.controller.HallticketController  : Request received to delete hallticket with ID: 3
+2025-04-17T01:41:00.968+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-2] c.F.FSD.controller.HallticketController  : Hallticket deleted successfully with ID: 3
+2025-04-17T01:41:02.403+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-1] c.F.FSD.controller.HallticketController  : Request received to get all halltickets
+2025-04-17T01:41:02.410+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-1] c.F.FSD.controller.HallticketController  : Returning list of 2 halltickets
+2025-04-17T01:41:03.986+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-6] c.F.FSD.controller.HallticketController  : Request received to delete hallticket with ID: 2
+2025-04-17T01:41:03.998+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-6] c.F.FSD.controller.HallticketController  : Hallticket deleted successfully with ID: 2
+2025-04-17T01:41:05.280+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-4] c.F.FSD.controller.HallticketController  : Request received to get all halltickets
+2025-04-17T01:41:05.291+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-4] c.F.FSD.controller.HallticketController  : Returning list of 1 halltickets
+2025-04-17T01:41:18.991+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-5] c.F.FSD.controller.HallticketController  : Request received to create a hallticket with name: jisoo22
+2025-04-17T01:41:19.003+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-5] c.F.FSD.controller.HallticketController  : Hallticket created successfully with ID: 6
+2025-04-17T01:41:20.798+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-9] c.F.FSD.controller.HallticketController  : Request received to get all halltickets
+2025-04-17T01:41:20.808+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-9] c.F.FSD.controller.HallticketController  : Returning list of 2 halltickets
+2025-04-17T01:41:23.647+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-8] c.F.FSD.controller.TeacherController     : Request received to get all teachers
+2025-04-17T01:41:23.666+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-8] c.F.FSD.controller.TeacherController     : Returning list of 3 teachers
+2025-04-17T01:41:27.399+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-2] c.F.FSD.controller.SupervisorController  : Request received to get all Supervisor
+2025-04-17T01:41:27.410+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-2] c.F.FSD.controller.SupervisorController  : Returning list of 1 Supervisor
+2025-04-17T01:41:28.740+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-1] c.F.FSD.controller.EnrollmentController  : Request received to get all Enrollment
+2025-04-17T01:41:28.756+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-1] c.F.FSD.controller.EnrollmentController  : Returning list of 1 Enrollment
+2025-04-17T01:41:30.271+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-3] c.F.FSD.controller.HallticketController  : Request received to get all halltickets
+2025-04-17T01:41:30.280+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-3] c.F.FSD.controller.HallticketController  : Returning list of 2 halltickets
+2025-04-17T01:48:49.789+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-7] c.F.FSD.controller.TeacherController     : Request received to get all teachers
+2025-04-17T01:48:50.124+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-7] c.F.FSD.controller.TeacherController     : Returning list of 3 teachers
+2025-04-17T01:51:47.971+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-10] c.F.FSD.controller.SupervisorController  : Request received to get all Supervisor
+2025-04-17T01:51:48.108+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-10] c.F.FSD.controller.SupervisorController  : Returning list of 1 Supervisor
+2025-04-17T01:51:51.135+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-9] c.F.FSD.controller.SupervisorController  : Request received to get all Supervisor
+2025-04-17T01:51:51.144+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-9] c.F.FSD.controller.SupervisorController  : Returning list of 1 Supervisor
+2025-04-17T01:51:51.655+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-8] c.F.FSD.controller.SupervisorController  : Request received to get all Supervisor
+2025-04-17T01:51:51.667+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-8] c.F.FSD.controller.SupervisorController  : Returning list of 1 Supervisor
+2025-04-17T01:51:58.527+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-1] c.F.FSD.controller.TeacherController     : Request received to get all teachers
+2025-04-17T01:51:58.544+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-1] c.F.FSD.controller.TeacherController     : Returning list of 3 teachers
+2025-04-17T01:52:00.360+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-3] c.F.FSD.controller.SupervisorController  : Request received to get all Supervisor
+2025-04-17T01:52:00.372+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-3] c.F.FSD.controller.SupervisorController  : Returning list of 1 Supervisor
+2025-04-17T01:54:31.737+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-4] c.F.FSD.controller.SupervisorController  : Request received to get all Supervisor
+2025-04-17T01:54:31.868+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-4] c.F.FSD.controller.SupervisorController  : Returning list of 1 Supervisor
+2025-04-17T01:54:32.377+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-7] c.F.FSD.controller.SupervisorController  : Request received to get all Supervisor
+2025-04-17T01:54:32.389+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-7] c.F.FSD.controller.SupervisorController  : Returning list of 1 Supervisor
+2025-04-17T01:54:49.689+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-8] c.F.FSD.controller.SupervisorController  : Request received to create a supervisor with name: jk
+2025-04-17T01:54:49.776+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-8] c.F.FSD.controller.SupervisorController  : Supervisor created successfully with ID: 3
+2025-04-17T01:54:51.889+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-2] c.F.FSD.controller.SupervisorController  : Request received to get all Supervisor
+2025-04-17T01:54:51.900+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-2] c.F.FSD.controller.SupervisorController  : Returning list of 2 Supervisor
+2025-04-17T01:54:58.881+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-1] c.F.FSD.controller.TeacherController     : Request received to get all teachers
+2025-04-17T01:54:58.894+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-1] c.F.FSD.controller.TeacherController     : Returning list of 3 teachers
+2025-04-17T01:55:03.248+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-6] c.F.FSD.controller.SupervisorController  : Request received to get all Supervisor
+2025-04-17T01:55:03.265+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-6] c.F.FSD.controller.SupervisorController  : Returning list of 2 Supervisor
+2025-04-17T01:56:08.464+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-7] c.F.FSD.controller.TeacherController     : Request received to get all teachers
+2025-04-17T01:56:08.540+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-7] c.F.FSD.controller.TeacherController     : Returning list of 3 teachers
+2025-04-17T01:56:10.696+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-5] c.F.FSD.controller.SupervisorController  : Request received to get all Supervisor
+2025-04-17T01:56:10.709+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-5] c.F.FSD.controller.SupervisorController  : Returning list of 2 Supervisor
+2025-04-17T01:57:39.273+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-9] c.F.FSD.controller.SupervisorController  : Request received to get all Supervisor
+2025-04-17T01:57:39.347+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-9] c.F.FSD.controller.SupervisorController  : Returning list of 2 Supervisor
+2025-04-17T01:57:40.297+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-8] c.F.FSD.controller.SupervisorController  : Request received to get all Supervisor
+2025-04-17T01:57:40.319+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-8] c.F.FSD.controller.SupervisorController  : Returning list of 2 Supervisor
+2025-04-17T01:57:42.582+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-1] c.F.FSD.controller.TeacherController     : Request received to get all teachers
+2025-04-17T01:57:42.601+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-1] c.F.FSD.controller.TeacherController     : Returning list of 3 teachers
+2025-04-17T01:57:44.492+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-6] c.F.FSD.controller.SupervisorController  : Request received to get all Supervisor
+2025-04-17T01:57:44.502+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-6] c.F.FSD.controller.SupervisorController  : Returning list of 2 Supervisor
+2025-04-17T01:57:46.086+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-4] c.F.FSD.controller.EnrollmentController  : Request received to get all Enrollment
+2025-04-17T01:57:46.126+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-4] c.F.FSD.controller.EnrollmentController  : Returning list of 1 Enrollment
+2025-04-17T01:57:48.298+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-7] c.F.FSD.controller.HallticketController  : Request received to get all halltickets
+2025-04-17T01:57:48.319+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-7] c.F.FSD.controller.HallticketController  : Returning list of 2 halltickets
+2025-04-17T01:57:51.015+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-5] c.F.FSD.controller.TeacherController     : Request received to get all teachers
+2025-04-17T01:57:51.080+05:30  INFO 19084 --- [FSD] [http-nio-8080-exec-5] c.F.FSD.controller.TeacherController     : Returning list of 3 teachers
