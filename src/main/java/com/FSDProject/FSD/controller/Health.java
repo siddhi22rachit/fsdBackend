@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Health {
     
-    // @GetMapping("/")
-    // public String healthCheck() {
-    //     return "Server Working on 8080";
-    // }
+    @GetMapping("/")
+    public String home() {
+        return "Backend is running!";
+    }
 }
